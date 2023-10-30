@@ -1,0 +1,173 @@
+<ui version="4.0" >
+ <class>FormRoleNoRoleGorev</class>
+ <widget class="QWidget" name="FormRoleNoRoleGorev" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>558</width>
+    <height>594</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Role Numarasına Role Görevi Atama</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset/>
+  </property>
+  <layout class="QGridLayout" >
+   <item row="0" column="0" colspan="4" >
+    <widget class="QGroupBox" name="groupBox" >
+     <property name="title" >
+      <string>Role Numarası / Mevcut Görevler</string>
+     </property>
+     <layout class="QGridLayout" >
+      <item row="0" column="0" >
+       <widget class="QLabel" name="label_4" >
+        <property name="text" >
+         <string>Role No Ara:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" >
+       <widget class="QLineEdit" name="ara_roleno" />
+      </item>
+      <item row="1" column="0" colspan="2" >
+       <widget class="QSplitter" name="splitter_2" >
+        <property name="orientation" >
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QTableView" name="tablo_roleno" >
+         <property name="alternatingRowColors" >
+          <bool>true</bool>
+         </property>
+         <property name="selectionMode" >
+          <enum>QAbstractItemView::SingleSelection</enum>
+         </property>
+         <property name="selectionBehavior" >
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+        </widget>
+        <widget class="QTableView" name="tablo_mevcut_gorevler" >
+         <property name="contextMenuPolicy" >
+          <enum>Qt::ActionsContextMenu</enum>
+         </property>
+         <property name="selectionMode" >
+          <enum>QAbstractItemView::SingleSelection</enum>
+         </property>
+         <property name="selectionBehavior" >
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="4" >
+    <widget class="QGroupBox" name="groupBox_2" >
+     <property name="title" >
+      <string>Roleler / Role Görevleri</string>
+     </property>
+     <layout class="QGridLayout" >
+      <item row="0" column="0" >
+       <widget class="QLabel" name="label" >
+        <property name="text" >
+         <string>Role Ara :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" >
+       <widget class="QLineEdit" name="ara_uyeler" />
+      </item>
+      <item row="0" column="2" >
+       <widget class="QLabel" name="label_2" >
+        <property name="text" >
+         <string>Role Görevi Ara:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3" >
+       <widget class="QLineEdit" name="ara_kitaplar" />
+      </item>
+      <item row="1" column="0" colspan="4" >
+       <widget class="QSplitter" name="splitter" >
+        <property name="orientation" >
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QTableView" name="tablo_role" >
+         <property name="selectionMode" >
+          <enum>QAbstractItemView::SingleSelection</enum>
+         </property>
+         <property name="selectionBehavior" >
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+        </widget>
+        <widget class="QTableView" name="tablo_rolegorev" >
+         <property name="selectionMode" >
+          <enum>QAbstractItemView::SingleSelection</enum>
+         </property>
+         <property name="selectionBehavior" >
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0" >
+    <widget class="QLabel" name="label_5" >
+     <property name="text" >
+      <string>Seçilen Role No:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1" colspan="3" >
+    <widget class="QLineEdit" name="LeRoleNo" />
+   </item>
+   <item row="4" column="0" >
+    <widget class="QLabel" name="label_3" >
+     <property name="text" >
+      <string>Seçilen Role:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1" >
+    <widget class="QLineEdit" name="LeRole" />
+   </item>
+   <item row="4" column="2" >
+    <widget class="QLabel" name="label_6" >
+     <property name="text" >
+      <string>Seçilen Görev:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="3" >
+    <widget class="QLineEdit" name="LeRoleGorev" />
+   </item>
+   <item row="6" column="0" colspan="4" >
+    <widget class="QPushButton" name="PbAta" >
+     <property name="text" >
+      <string>Onayla</string>
+     </property>
+     <property name="icon" >
+      <iconset/>
+     </property>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionGorevsil" >
+   <property name="icon" >
+    <iconset resource="ikon.qrc" >:/ikonlar/eraser.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Görevi Sil</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="ikon.qrc" />
+ </resources>
+ <connections/>
+</ui>

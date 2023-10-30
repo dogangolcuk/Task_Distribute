@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>personel</Name>
+	<Homepage>http://--</Homepage>
+        <Packager>
+            <Name>personel</Name>
+            <Email>yok</Email>
+        </Packager>
+        <License>GPL-2</License>
+        <IsA>app:gui</IsA>
+	<PartOf>applications.education</PartOf>
+        <Summary>Personel Takip Yazılımı(şuan için sadece role)</Summary>
+	<Description>Personel Takip Yazılımı(şuan için sadece role). </Description>
+	<Archive sha1sum="9e5e16cb653a9168a95ac49ac79e5ffa8dcd5716" type="targz">/home/qwerty/MyProgs/Personel/personel-0.3.8.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>qt4</Dependency>
+        </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>personel</Name>
+        <RuntimeDependencies>
+            <Dependency>qt4</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+	    <Path fileType="data">/usr/share</Path>
+	    <Path fileType="config">/etc</Path>
+        </Files>
+        <AdditionalFiles>
+		<AdditionalFile owner="root" permission="0644" target="/usr/share/applications/personel.desktop">personel.desktop</AdditionalFile>
+		<AdditionalFile owner="root" permission="0644" target="/etc/personel.ayar">personel.ayar</AdditionalFile>
+	</AdditionalFiles>
+   </Package>
+   <History>
+	   <Update release="4">
+		   <Date>2007-12-22</Date>
+		   <Version>0.3.8</Version>
+		   <Comment>new release</Comment>
+		   <Name>doğan gölcük</Name>
+		   <Email>yok</Email>
+        </Update>
+	   <Update release="4">
+		   <Date>2007-10-23</Date>
+		   <Version>0.3.5</Version>
+		   <Comment>new release</Comment>
+		   <Name>doğan gölcük</Name>
+		   <Email>yok</Email>
+        </Update>
+	   <Update release="4">
+		   <Date>2007-09-22</Date>
+		   <Version>0.3.4</Version>
+		   <Comment>new release</Comment>
+		   <Name>doğan gölcük</Name>
+		   <Email>yok</Email>
+        </Update>
+	   <Update release="3">
+		   <Date>2007-09-18</Date>
+		   <Version>0.3</Version>
+		   <Comment>new release</Comment>
+		   <Name>doğan gölcük</Name>
+		   <Email>yok</Email>
+        </Update>
+	   <Update release="2">
+		   <Date>2007-09-14</Date>
+		   <Version>0.2</Version>
+		   <Comment>new release</Comment>
+		   <Name>doğan gölcük</Name>
+		   <Email>yok</Email>
+        </Update>
+        <Update release="1">
+            <Date>2007-09-12</Date>
+            <Version>0.1</Version>
+            <Comment>First release</Comment>
+	    <Name>doğan gölcük</Name>
+            <Email>yok</Email>
+        </Update>
+    </History>
+</PISI>
+

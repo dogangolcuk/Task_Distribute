@@ -1,0 +1,206 @@
+<ui version="4.0" >
+ <class>FormPersonelGorev</class>
+ <widget class="QWidget" name="FormPersonelGorev" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>558</width>
+    <height>507</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Personel Görev Yeri Eşleştirme</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset resource="ikon.qrc" >:/ikonlar/share.png</iconset>
+  </property>
+  <layout class="QGridLayout" >
+   <item row="0" column="0" >
+    <widget class="QLabel" name="label" >
+     <property name="text" >
+      <string>Personel Ara :</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" colspan="2" >
+    <widget class="QLineEdit" name="ara_uyeler" />
+   </item>
+   <item row="0" column="3" colspan="2" >
+    <widget class="QLabel" name="label_2" >
+     <property name="text" >
+      <string>Görev Ara:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="5" colspan="2" >
+    <widget class="QLineEdit" name="ara_gorevyeri" />
+   </item>
+   <item row="1" column="0" colspan="2" >
+    <widget class="QLabel" name="label_7" >
+     <property name="text" >
+      <string>Personel :</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3" colspan="3" >
+    <widget class="QLabel" name="label_3" >
+     <property name="text" >
+      <string>Görev Yeri/Adı :</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="7" >
+    <widget class="QSplitter" name="splitter" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QTableView" name="tablo_personel" >
+      <property name="selectionMode" >
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior" >
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tablo_gorevyeri" >
+      <property name="toolTip" >
+       <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Aradığınız Görev Yeri Yoksa "&lt;span style=" color:#ff0000;">Sabit Veriler&lt;/span>" den Ekleyiniz.&lt;/p>&lt;/body>&lt;/html></string>
+      </property>
+      <property name="selectionMode" >
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior" >
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="2" >
+    <widget class="QLabel" name="label_5" >
+     <property name="text" >
+      <string>SeçilenPersonel::</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2" >
+    <widget class="QLineEdit" name="LePersonel" />
+   </item>
+   <item row="3" column="3" colspan="2" >
+    <widget class="QLabel" name="label_6" >
+     <property name="text" >
+      <string>Seçilen Görev:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="6" >
+    <widget class="QLineEdit" name="LeGorevYeri" />
+   </item>
+   <item row="4" column="0" >
+    <widget class="QLabel" name="label_8" >
+     <property name="text" >
+      <string>Atanma Tarihi:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="2" colspan="2" >
+    <widget class="QLabel" name="label_9" >
+     <property name="text" >
+      <string>Katılma Tarihi :</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="4" colspan="3" >
+    <widget class="QLabel" name="label_10" >
+     <property name="text" >
+      <string>Ayrılma Tarihi :</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0" colspan="2" >
+    <widget class="QDateEdit" name="DeAtanma" >
+     <property name="calendarPopup" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="2" colspan="2" >
+    <widget class="QDateEdit" name="DeKatilma" >
+     <property name="calendarPopup" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="4" colspan="3" >
+    <widget class="QDateEdit" name="DeAyrilma" >
+     <property name="calendarPopup" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0" colspan="7" >
+    <widget class="QPushButton" name="PbAta" >
+     <property name="text" >
+      <string>Onayla</string>
+     </property>
+     <property name="icon" >
+      <iconset resource="ikon.qrc" >:/ikonlar/onayla.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0" colspan="7" >
+    <widget class="QLabel" name="label_4" >
+     <property name="text" >
+      <string>Personelin Görev Yerleri :</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0" colspan="7" >
+    <widget class="QTableView" name="tablo_mevcut_gorevler" >
+     <property name="mouseTracking" >
+      <bool>true</bool>
+     </property>
+     <property name="focusPolicy" >
+      <enum>Qt::WheelFocus</enum>
+     </property>
+     <property name="contextMenuPolicy" >
+      <enum>Qt::ActionsContextMenu</enum>
+     </property>
+     <property name="editTriggers" >
+      <set>QAbstractItemView::AllEditTriggers</set>
+     </property>
+     <property name="tabKeyNavigation" >
+      <bool>false</bool>
+     </property>
+     <property name="alternatingRowColors" >
+      <bool>true</bool>
+     </property>
+     <property name="selectionMode" >
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+     <property name="selectionBehavior" >
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <property name="sortingEnabled" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionSil" >
+   <property name="icon" >
+    <iconset resource="ikon.qrc" >:/ikonlar/eraser.png</iconset>
+   </property>
+   <property name="text" >
+    <string>sil</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="ikon.qrc" />
+ </resources>
+ <connections/>
+</ui>

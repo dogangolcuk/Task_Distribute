@@ -1,0 +1,35 @@
+<RCC>
+    <qresource >
+        <file>ikonlar/agt_business.png</file>
+        <file>ikonlar/agt_family.png</file>
+        <file>ikonlar/applixware.png</file>
+        <file>ikonlar/button_cancel.png</file>
+        <file>ikonlar/cache.png</file>
+        <file>ikonlar/cnr-update.png</file>
+        <file>ikonlar/contents.png</file>
+        <file>ikonlar/easymoblog.png</file>
+        <file>ikonlar/edit.png</file>
+        <file>ikonlar/edit_remove.png</file>
+        <file>ikonlar/eraser.png</file>
+        <file>ikonlar/filefind.png</file>
+        <file>ikonlar/filesaveas.png</file>
+        <file>ikonlar/find.png</file>
+        <file>ikonlar/info.png</file>
+        <file>ikonlar/kedit.png</file>
+        <file>ikonlar/onayla.png</file>
+        <file>ikonlar/reload.png</file>
+        <file>ikonlar/share.png</file>
+        <file>ikonlar/yayinevi.png</file>
+        <file>ikonlar/fileprint.png</file>
+	<file>ikonlar/uyelist.png</file>
+	<file>ikonlar/kitaplist.png</file>
+	<file>ikonlar/role_rolegorev.png</file>
+	<file>ikonlar/roleno_role_rolegorev.png</file>
+	<file>ikonlar/roleno.png</file>
+	<file>ikonlar/roleler.png</file>
+	<file>ikonlar/rolegorevleri.png</file>
+	<file>ikonlar/personal.png</file>
+	<file>ikonlar/kontact_contacts.png</file>
+	<file>ikonlar/kate.png</file>
+    </qresource>
+</RCC>
